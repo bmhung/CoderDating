@@ -1,3 +1,4 @@
+<% skip_if_logged_in %>
 <%= form_tag "sessions/create", method: :post, class: "navbar-form navbar-left search-form" do %>
   <div class="form-group row">
     <%= label_tag "email", nil, class: "form-control-label col-sm-2" %>
