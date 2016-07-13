@@ -1,0 +1,11 @@
+<h3>The Dating Site for Ruby Experts</h3>
+<p>CoderDating is the first dating website just for experienced Ruby on Rails engineers.</p>
+<% if @user.errors.any? %>
+  <div class="alert alert-danger">
+    <%= @user.errors.full_messages.to_sentence %>
+  </div>
+<% end %>
+<div class="signup-form">
+  <%= render "form" %>
+</div>
+<div class="additional-links">By signing up you agree to <a href="#">Terms of Use</a> and <a href="#">Privacy</a></div>

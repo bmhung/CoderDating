@@ -1,5 +1,6 @@
 namespace :coderdating do
   desc "Create five female users and five male users"
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
   task generate_users: :environment do
     fem_url = 'https://randomuser.me/api?results=5&gender=female'
     male_url = 'https://randomuser.me/api?results=5&gender=male'
